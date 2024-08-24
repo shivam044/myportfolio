@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Eurostile:wght@800&family=Europa:wght@400&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer utilities {
+  .font-eurostile {
+    font-family: 'Eurostile', sans-serif;
+  }
+  .font-europa {
+    font-family: 'Europa', sans-serif;
+  }
+}
+
+@font-face {
+  font-family: 'Europa';
+  src: url('/fonts/europa-regular-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* h1, h2, h3, h4, h5, h6 {
+  font-family: "eurostile", sans-serif;
+  font-weight: 800;
+} */
+
+body {
+  font-family: "Europa"; /* Fallback to  europa*/
+}
+
+.subtitle{
+          font-family: 'europa, sans-serif';
+          font-weight: 400;
+          color: 'rgb(255, 255, 255)';
+          font-size: '20px';
+          line-Height: '30px';
+}
+
